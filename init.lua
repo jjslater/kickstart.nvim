@@ -616,6 +616,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'lua-language-server', -- Lua Language server
         'stylua', -- Used to format Lua code
+        'jdtls',
         -- You can add other tools here that you want Mason to install
       })
 
@@ -653,6 +654,7 @@ require('lazy').setup({
         },
       })
       vim.lsp.enable 'lua_ls'
+      vim.lsp.enable 'jdtls'
     end,
   },
 
